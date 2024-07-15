@@ -33,6 +33,6 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 - langchain_community
 
 ## Methods
-###Direct Pixel Extraction
+### Direct Pixel Extraction
 jkhiuhui
 
