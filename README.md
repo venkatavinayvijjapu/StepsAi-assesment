@@ -13,7 +13,6 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 - [Advantages and Disadvantages](#Advantages-and-Disadvantages)
   - [Advantages](#Advantages)
   - [Disadvantages](#Disadvantages)
-- [Visualization](#visualization)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -90,3 +89,10 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 - Computational resources: Requires significant computational resources for data processing, embedding, and model training.
 - Maintenance: The system requires ongoing maintenance to ensure data accuracy and model performance.
 - Potential for bias: The LLM used might introduce biases into the generated answers.
+
+### Installation-Guide-for-Milvus-Vector-DB:
+- To install Milvus DB you need to install docker and WSL or Linux to your system.
+- Follow this txt file.
+''' bash
+  https://github.com/binodsuman/nlp/blob/master/Installation_guide.txt
+  '''
