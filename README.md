@@ -13,7 +13,7 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 - [Advantages and Disadvantages](#Advantages-and-Disadvantages)
   - [Advantages](#Advantages)
   - [Disadvantages](#Disadvantages)
-- [Contributing](#contributing)
+- [Installation-Guide-for-Milvus-Vector-DB](#Installation-Guide-for-Milvus-Vector-DB)
 - [License](#license)
 
 ## Installation
@@ -93,6 +93,4 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 ### Installation-Guide-for-Milvus-Vector-DB:
 - To install Milvus DB you need to install docker and WSL or Linux to your system.
 - Follow this txt file.
-''' bash
   https://github.com/binodsuman/nlp/blob/master/Installation_guide.txt
-  '''
