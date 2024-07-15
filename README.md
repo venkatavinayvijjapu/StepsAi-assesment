@@ -33,7 +33,8 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 - langchain_community
 
 ## Methods
-''' python:
+''' python
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
