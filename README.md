@@ -10,7 +10,7 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 - [Methods](#methods)
   - [Using Openai without using QueryExpander](#Using-Openai-without-using-BM25)
   - [Using-GenAi-and-Groq-integrating-BM25-for-QueryExpansion ](#Using-GenAi-and-Groq-integrating-BM25-for-QueryExpansion )
-- [Advantages and Disadvantages](#advantages-and-disadvantages)
+- [Advantages and Disadvantages](#Advantages-and-Disadvantages)
   - [Advantages](#Advantages)
   - [Disadvantages](#Disadvantages)
 - [Visualization](#visualization)
@@ -77,14 +77,14 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 #### 6. Question Answering:
 - Uses Google Generative AI's Gemini model or Groq models to generate answers based on the retrieved context and the user's query.
 
-#### advantages-and-disadvantages
-### Advantages
+### Advantages-and-Disadvantages
+#### Advantages
 - Improved accessibility: Provides easy and quick access to information from the complex NVIDIA CUDA documentation.
 - Time-saving: Users can find answers to their queries without spending hours searching through the documentation.
 - Enhanced user experience: Offers a user-friendly interface for interacting with the information.
 - Potential for automation: Can be integrated into other tools or platforms to automate tasks related to CUDA.
 - Knowledge base: Serves as a valuable resource for learning and understanding CUDA concepts.
-### Disadvantages
+#### Disadvantages
 - Dependency on data quality: The accuracy of the QA system relies heavily on the quality of the scraped data.
 - Limitations of language models: The quality of the generated answers is dependent on the capabilities of the LLM used.
 - Computational resources: Requires significant computational resources for data processing, embedding, and model training.
