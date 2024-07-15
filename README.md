@@ -33,60 +33,25 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 - langchain_community
 
 ## Methods
-''' python
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from bs4 import BeautifulSoup
-import time
-from urllib.parse import urljoin, urlparse
-
-# Function to get page source after JavaScript execution
-def get_page_source(driver, url):
-    driver.get(url)
-    time.sleep(3)  # Wait for the page to load completely
-    return driver.page_source
-
-# Function to extract internal links with specific class 'reference internal'
-def extract_links(soup, base_url):
-    links = set()
-    base_domain = urlparse(base_url).netloc
-    for a_tag in soup.find_all('a', class_='reference internal', href=True):
-        href = a_tag['href']
-        full_url = urljoin(base_url, href)
-        if urlparse(full_url).netloc == base_domain:
-            links.add(full_url)
-    return links
-
-def main():
-    url = "https://docs.nvidia.com/cuda/"
-
-    options = Options()
-    options.headless = True
-    driver = webdriver.Chrome(options=options)  # Ensure ChromeDriver is installed and in your PATH
-
-    print(f"Extracting links from: {url}")
-    page_source = get_page_source(driver, url)
-    soup = BeautifulSoup(page_source, "html.parser")
-
-    # Extract links with the specified class
-    links = extract_links(soup, url)
-    print(f"Found {len(links)} links with class 'reference internal'")
-
-    # Convert the set to a list
-    links_list = list(links)
-    links_list[0]='https://docs.nvidia.com/cuda'
-    # Print the list of links
-    for link in links_list:
-        print(link)
-
-    # Close the browser
-    driver.quit()
-    links_list=list(set(links_list))
-
-    return links_list
-
-if __name__ == "__main__":
-    links = main()
-    '''
-### Using Openai without using BM25
+### Using Openai without using BM25 
+#### 1. Data Scraping:
+- Extracts URLs from the NVIDIA CUDA documentation using BeautifulSoup.
+- Fetches content from these URLs and stores them in a JSON file.
+#### 2. Data Preprocessing:
+- Loads the scraped data.
+- Splits the text into chunks using semantic chunking.
+- Embeds each chunk using a sentence transformer model.
+- Stores the chunks and their embeddings in another JSON file.
+#### 3. Milvus Integration:
+- Initializes a Milvus connection.
+- Creates a Milvus collection to store the embedded data.
+- Inserts the embedded chunks into the Milvus collection.
+- LLM and Vector Database Integration:
+#### 4. Initializes an OpenAI LLM.
+- Creates a vector database using Milvus and the embedded data.
+- Constructs a conversational retrieval chain using the LLM and vector database.
+#### 5. Question Answering:
+- Demonstrates the QA system by providing a sample query ("Summarize the data").
+- Retrieves relevant information from the vector database using the query.
+- Generates a response using the LLM based on the retrieved information.
