@@ -14,8 +14,7 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
   - [Advantages](#Advantages)
   - [Disadvantages](#Disadvantages)
 - [Installation-Guide-for-Milvus-Vector-DB](#Installation-Guide-for-Milvus-Vector-DB)
-- [License](#license)
-
+  
 ## Installation
 - python 3x
 - langchain_openai
