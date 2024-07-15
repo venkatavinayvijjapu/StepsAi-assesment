@@ -34,7 +34,7 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 
 ## Methods
 
-### 1. Using-Openai-without-using-BM25 
+### Using-Openai-without-using-BM25 
 #### 1. Data Scraping:
 - Extracts URLs from the NVIDIA CUDA documentation using BeautifulSoup.
 - Fetches content from these URLs and stores them in a JSON file.
