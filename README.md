@@ -1,15 +1,12 @@
 # StepsAi-assesment
 
-# Image to Pixel Conversion Project
-
 ## Overview
 
-This project aims to explore different methods for converting images into pixel information. We will implement two primary approaches: direct pixel extraction and using pre-trained segmentation models. Additionally, we will include functionalities for visualizing the extracted pixel information.
+To develop a robust Question Answering (QA) system leveraging the capabilities of Large Language Models (LLMs) to provide comprehensive and accurate answers to user queries.
 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
 - [Methods](#methods)
   - [Direct Pixel Extraction](#direct-pixel-extraction)
   - [Pre-trained Segmentation Model](#pre-trained-segmentation-model)
@@ -21,10 +18,21 @@ This project aims to explore different methods for converting images into pixel 
 - [License](#license)
 
 ## Installation
+- python 3x
+- langchain_openai
+- langchain_google_genai
+- selenium
+- Beautifulsoup
+- sentence-transformers
+- langchain_experimental
+- pymilvus
+- milvus
+- transformers
+- langchain_openai
+- langchain_core
+- langchain_community
 
-To get started, clone the repository and install the necessary dependencies:
+## Methods
+###Direct Pixel Extraction
+jkhiuhui
 
-```bash
-git clone https://github.com/yourusername/image-to-pixel-conversion.git
-cd image-to-pixel-conversion
-pip install -r requirements.txt
