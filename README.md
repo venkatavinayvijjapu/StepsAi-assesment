@@ -8,7 +8,7 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 
 - [Installation](#installation)
 - [Methods](#methods)
-  - [Direct Pixel Extraction](#direct-pixel-extraction)
+  - [1. Using Openai without using BM25](#Using-Openai-without-using-BM25)
   - [Pre-trained Segmentation Model](#pre-trained-segmentation-model)
 - [Advantages and Disadvantages](#advantages-and-disadvantages)
   - [Direct Pixel Extraction](#advantages-and-disadvantages-of-direct-pixel-extraction)
@@ -34,7 +34,7 @@ To develop a robust Question Answering (QA) system leveraging the capabilities o
 
 ## Methods
 
-### Using Openai without using BM25 
+### 1. Using Openai without using BM25 
 #### 1. Data Scraping:
 - Extracts URLs from the NVIDIA CUDA documentation using BeautifulSoup.
 - Fetches content from these URLs and stores them in a JSON file.
